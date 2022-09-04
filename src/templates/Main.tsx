@@ -1,17 +1,22 @@
 import type { ReactNode } from 'react';
 
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
+
+import styles from './Main.module.css';
+
 type IMainProps = {
   meta: ReactNode;
   children: ReactNode;
 };
 
 const Main = (props: IMainProps) => (
-  <div className="w-full px-1 text-gray-700 antialiased">
+  <div className="w-full antialiased">
     {props.meta}
 
-    <div className="mx-auto max-w-screen-md">
-      <div className="content py-5 text-xl">{props.children}</div>
-    </div>
+    <Header />
+    <div className={`${styles.height} p-4`}>{props.children}</div>
+    <Footer />
   </div>
 );
 

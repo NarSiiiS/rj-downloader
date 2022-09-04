@@ -1,21 +1,19 @@
 @tailwind base;
 
-a {
-  @apply text-blue-700;
-}
-
-a:hover {
-  @apply border-b-2 border-blue-700;
-}
-
 @tailwind components;
 
 @tailwind utilities;
 
-.content p {
-  @apply my-6;
+body {
+  @apply bg-slate-800
 }
 
-.content ul {
-  @apply my-6;
+.swiper-button-prev, .swiper-button-next {
+  --swiper-navigation-size: 30px;
+  --swiper-navigation-color: #fff;
+}
+
+.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+   opacity: 0;
+
 }
