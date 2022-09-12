@@ -32,6 +32,12 @@ const Index = ({ sections }: IHomeProps) => {
       case SectionType.slider_square:
       case SectionType.grid:
         return section.items && <List key={section.id} items={section.items} />;
+      case SectionType.slider:
+        return (
+          section.items && (
+            <List key={section.id} large={true} items={section.items} />
+          )
+        );
       default:
         return '';
     }
@@ -43,7 +49,13 @@ const Index = ({ sections }: IHomeProps) => {
         <Meta title={AppConfig.site_name} description={AppConfig.description} />
       }
     >
-      {sections.map((section) => currentSection(section))}
+      {sections
+        .filter(
+          (section) =>
+            !section.id.includes('recently_played') &&
+            !section.id.includes('artists')
+        )
+        .map((section) => currentSection(section))}
     </Main>
   );
 };

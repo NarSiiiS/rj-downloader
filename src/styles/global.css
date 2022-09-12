@@ -5,7 +5,11 @@
 @tailwind utilities;
 
 body {
-  @apply bg-slate-800
+  @apply bg-slate-800 !important;
+}
+
+:root {
+    color-scheme: dark;
 }
 
 .swiper-button-prev, .swiper-button-next {
@@ -15,5 +19,5 @@ body {
 
 .swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
    opacity: 0;
-
 }
+

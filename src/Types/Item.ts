@@ -1,4 +1,9 @@
 export default interface Item {
+  podcast_artist?: string;
+  created_by?: string;
+  items?: Item[];
+  items_count?: number;
+  thumbnail?: string;
   id?: string;
   bg_colors?: string[];
   artist: string;
