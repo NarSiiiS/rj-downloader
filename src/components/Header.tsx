@@ -31,7 +31,7 @@ const Header = () => {
   const { width } = useViewportSize();
 
   const desktopNav = menuItems.map((menu) => (
-    <Link key={menu.name} href={menu.path}>
+    <Link prefetch={false} key={menu.name} href={menu.path}>
       <a
         className={`px-3 font-medium text-gray-300 hover:text-red-400 ${
           router.pathname === (menu.active || menu.path) ? 'text-red-400' : ''
@@ -43,7 +43,7 @@ const Header = () => {
   ));
 
   const mobileNav = menuItems.map((menu) => (
-    <Link key={menu.name} href={menu.path} passHref>
+    <Link prefetch={false} key={menu.name} href={menu.path} passHref>
       <NavLink
         color="red"
         component="a"
@@ -69,11 +69,11 @@ const Header = () => {
             />
           )}
         </div>
-        <div className="w-4/5 md:w-2/5">
+        <div className="w-3/5 md:w-2/5">
           <Search />
         </div>
-        <div className="hidden w-1/5 justify-end md:flex">
-          <Link href="/">
+        <div className="flex w-1/5 justify-end">
+          <Link prefetch={false} href="/">
             <img
               className="h-9"
               src="/assets/img/logo.svg"

@@ -62,7 +62,9 @@ const Card = ({ item, large = false, onClick }: ICardProps) => {
   return onClick ? (
     <div onClick={() => onClick(item)}>{cardContent}</div>
   ) : (
-    <Link href={link}>{cardContent}</Link>
+    <Link prefetch={false} href={link}>
+      {cardContent}
+    </Link>
   );
 };
 
