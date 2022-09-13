@@ -23,7 +23,7 @@
   <p align="center">
     Download music from RadioJavan.com
     <br />
-    <a href="https://github.com/NarSiiiS/rj-downloader">View Demo</a>
+    <a href="https://rj-downloader.vercel.app">View Demo</a>
     ·
     <a href="https://github.com/NarSiiiS/rj-downloader/issues">Report Bug</a>
     ·
@@ -59,7 +59,7 @@
 <div align="center">
 
 <!-- ABOUT THE PROJECT -->
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://rj-downloader.vercel.app)
 
 </div>
 
@@ -137,7 +137,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-AmirAbbas Mozaffari - NarSiiiS@live.com
+AmirAbbas Mozaffari - aam.phoenix@hotmail.com
 
 Project Link: [https://github.com/NarSiiiS/rj-downloader](https://github.com/NarSiiiS/rj-downloader)
 
