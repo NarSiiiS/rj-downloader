@@ -1,0 +1,23 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+body {
+  @apply bg-slate-800 !important;
+}
+
+:root {
+    color-scheme: dark;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  --swiper-navigation-size: 30px;
+  --swiper-navigation-color: #fff;
+}
+
+.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+   opacity: 0;
+}
+
